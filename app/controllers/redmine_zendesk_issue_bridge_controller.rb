@@ -84,7 +84,7 @@ private
 		require 'zendesk_api'
 		ZendeskAPI::Client.new do |config|
 			subdomain = Issue.zendesk_settings[:zendesk_subdomain]
-			config.url = "https://elandsystems.zendesk.com/api/v2" # e.g. https://mydesk.zendesk.com/api/v2
+			config.url = "https://custom.zendesk.com/api/v2" # e.g. https://mydesk.zendesk.com/api/v2
                         config.username = "your zendesk username/token"
                         config.token = "your zendesk token"
                         config.retry = true
